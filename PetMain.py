@@ -71,3 +71,7 @@ age_label.pack()
 # Age entry
 age_entry = tk.Entry(root)
 age_entry.pack()
+
+# Create a submit button
+submit_button = tk.Button(root, text="Submit", command=submit_form, bg='green', fg='white')
+submit_button.pack(side=tk.LEFT, padx=5)
