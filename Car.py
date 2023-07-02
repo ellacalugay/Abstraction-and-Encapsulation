@@ -13,5 +13,8 @@ class Car:
     def accelerate(self):
         self.__speed += 5
 
-# Create break methd that subtract 5 to the speed data attribute each time it is called
+    # Create brake method that subtract 5 to the speed data attribute each time it is called
+    def brake(self):
+        self.__speed -= 5
+
 # Create get_speed method that should return the current speed.
