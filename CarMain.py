@@ -52,3 +52,6 @@ while running:
         speed_text = f"[{i}] Current speed: {my_car.get_speed()}"
         text = font.render(speed_text, True, purple)
         window.blit(text, (50, 400 + 40 * i))
+    
+    # Update the window
+    pygame.display.flip()
