@@ -7,6 +7,13 @@ import pygame
 # Initialize Pygame
 pygame.init()
 
+# Define colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+YELLOW = (255, 255, 0)
+BLUE = (0, 0, 255)
+LIGHT_BLUE = (173, 216, 230)
+
 # Create a class that creates two Fan Objects.
 class TestFan:
     def __init__(self):
