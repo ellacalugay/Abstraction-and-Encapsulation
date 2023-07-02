@@ -37,10 +37,10 @@ while running:
 
     # Call the accelerate method five times and display the current speed
     text = font.render("--Accelerate--", True, purple)
-    window.blit(text, (50, 50))
+    window.blit(text, (50, 100))
     for i in range(1, 6):
         my_car.accelerate()
-        speed_text = f"[{i}] Current speed: {my_car.get_speed()}"
+        speed_text = f"[{i}] The current speed is: {my_car.get_speed()}"
         text = font.render(speed_text, True, purple)
         window.blit(text, (50, 100 + 40 * i))
 
@@ -49,7 +49,7 @@ while running:
     window.blit(text, (50, 400))
     for i in range(1, 6):
         my_car.brake()
-        speed_text = f"[{i}] Current speed: {my_car.get_speed()}"
+        speed_text = f"[{i}] The current speed is: {my_car.get_speed()}"
         text = font.render(speed_text, True, purple)
         window.blit(text, (50, 400 + 40 * i))
     
