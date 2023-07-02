@@ -13,3 +13,7 @@ for i in range(1, 6):
     print(f"[{i}] Current speed of the car:", my_car.get_speed())
 
 # Call the brake method five times and display the current speed
+print("\n\n--Brake--")
+for i in range(1, 6):
+    my_car.brake()
+    print(f"[{i}] Current speed of the car:", my_car.get_speed())
