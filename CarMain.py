@@ -25,6 +25,13 @@ purple = (160, 32, 240)
 font_size = 24
 font = pygame.font.Font(None, 25)
 
+# Main game loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            running = False
+            
 # Call the accelerate method five times and display the current speed
 print("--Accelerate--")
 for i in range(1, 6):
