@@ -7,11 +7,16 @@ from tkinter import ttk
 
 # Define a function to display the pet information
 def display_pet_information(name, animal_type, age):
+    
     # Initialize tkinter app
     info_window = tk.Tk()
     info_window.title("Pet Information")
     info_window.configure(background='pink')
-    
+
+    # Set style
+    style = ttk.Style()
+    style.configure('TButton', font=('Helvetica', 12))
+
 # Prompts the user to enter the name, type, and age of his or her pet.
 name = input("Enter the name of your pet: ")
 animal_type = input("Enter the type of your pet: ")
