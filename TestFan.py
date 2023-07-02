@@ -77,6 +77,8 @@ class TestFan:
         
         # Quit Pygame
         pygame.quit()
-        
+
 # Create an instance of TestFan to run the program
 TestFan()
+
+# End of the code.
