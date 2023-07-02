@@ -1,7 +1,9 @@
-# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation
+# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation - Pet Class
 
 # Pseudocode
 from Pet import Pet
+import tkinter as tk
+from tkinter import ttk
 
 # Prompts the user to enter the name, type, and age of his or her pet.
 name = input("Enter the name of your pet: ")

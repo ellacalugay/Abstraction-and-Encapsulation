@@ -1,4 +1,4 @@
-# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation
+# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation - Pet Class
 
 # Pseudocode
 # Create a class named Pet
