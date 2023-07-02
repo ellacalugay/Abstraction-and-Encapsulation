@@ -32,3 +32,5 @@ class Pet:
     # Create a get age method
     def get_age(self):
         return self.__age
+    
+# End of the code.

@@ -88,3 +88,5 @@ clear_button.pack(side=tk.RIGHT, padx=5)
 
 # Start the tkinter event loop
 root.mainloop()
+
+# End of the code.
