@@ -56,6 +56,16 @@ class TestFan:
             text7 = font.render("Fan 2 - Color: " + second_fan.get_color(), True, BLUE)
             text8 = font.render("Fan 2 - On: " + str(second_fan.is_on()), True, BLUE)
 
+            # Blit the text onto the window
+            window.blit(text1, (10, 10))
+            window.blit(text2, (10, 30))
+            window.blit(text3, (10, 50))
+            window.blit(text4, (10, 70))
+            window.blit(text5, (10, 110))
+            window.blit(text6, (10, 130))
+            window.blit(text7, (10, 150))
+            window.blit(text8, (10, 170))
+
         # Control the frame rate
         clock.tick(60)
         
