@@ -45,3 +45,7 @@ pet = Pet(name, animal_type, age)
 print("Your pet's name is", pet.get_name())
 print("Your pet's type is", pet.get_animal_type())
 print("Your pet's age is", pet.get_age())
+
+# Create the main tkinter window
+root = tk.Tk()
+root.title("Pet Information Form")
