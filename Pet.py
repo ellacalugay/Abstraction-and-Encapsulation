@@ -9,7 +9,10 @@ class Pet:
         self.__animal_type = animal_type
         self.__age = age
 
-# Create a set name method
+    # Create a set name method
+    def set_name(self, name):
+        self.__speed = name
+
 # Create a set animal_type method
 # Create a set age method
 # Create a get name method
