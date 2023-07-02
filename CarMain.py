@@ -15,7 +15,15 @@ window = pygame.display.set_mode((window_width, window_height))
 pygame.display.set_caption("All About Car")
 
 # Create a Car object
-my_car = Car(2022, "Bugatti")
+my_car = Car(2022, "Bugatti La Voiture Noire")
+
+# Define some colors
+pink = (255, 192, 203)
+purple = (160, 32, 240)
+
+# Set up the font
+font_size = 24
+font = pygame.font.Font(None, 25)
 
 # Call the accelerate method five times and display the current speed
 print("--Accelerate--")
