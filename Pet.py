@@ -2,7 +2,13 @@
 
 # Pseudocode
 # Create a class named Pet
-# Create a constructor
+class Pet:
+# Create a constructor with name, animal type, and age attributes
+    def __init__(self, name, animal_type, age):
+        self.__name = name
+        self.__animal_type = animal_type
+        self.__age = age
+
 # Create a set name method
 # Create a set animal_type method
 # Create a set age method
