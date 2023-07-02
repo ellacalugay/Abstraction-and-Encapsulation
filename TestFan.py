@@ -33,6 +33,14 @@ class TestFan:
         # Create a clock object to control the frame rate
         clock = pygame.time.Clock()
 
+        # Game loop
+        running = True
+        while running:
+            # Handle events
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    running = False
+
         # Display the first object's speed, radius, color, and on properties.
         print("Fan 1 - Speed:", first_fan.get_speed())
         print("Fan 1 - Radius:", first_fan.get_radius())
