@@ -1,7 +1,12 @@
-# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation
+# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation - Car Class
 
 # Pseudocode
 from Car import Car
+import pygame
+from pygame.locals import *
+
+# Initialize Pygame
+pygame.init()
 
 # Create a Car object
 my_car = Car(2022, "Bugatti")
