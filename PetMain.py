@@ -33,18 +33,18 @@ def display_pet_information(name, animal_type, age):
     age_label = tk.Label(info_window, text="Your pet age is " + age, font=('Times', 12, 'bold'), bg='yellow')
     age_label.pack()
 
-# Prompts the user to enter the name, type, and age of his or her pet.
-name = input("Enter the name of your pet: ")
-animal_type = input("Enter the type of your pet: ")
-age = input("Enter the age of your pet: ")
+# Define a function to handle form submission
+def submit_form():
+    # Retrieve the entered information
+    name = name_entry.get()
+    animal_type = type_entry.get()
+    age = age_entry.get()
 
-# Create an object of the Pet class
-pet = Pet(name, animal_type, age)
+    # Create an object of the Pet class
+    pet = Pet(name, animal_type, age)
 
-# Display the entered information using the accessor methods
-print("Your pet's name is", pet.get_name())
-print("Your pet's type is", pet.get_animal_type())
-print("Your pet's age is", pet.get_age())
+    # Display the pet information in a new window
+    display_pet_information(pet.get_name(), pet.get_animal_type(), pet.get_age())
 
 # Create the main tkinter window
 root = tk.Tk()
