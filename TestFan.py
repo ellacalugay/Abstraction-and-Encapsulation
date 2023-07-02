@@ -75,5 +75,8 @@ class TestFan:
             # Control the frame rate
             clock.tick(60)
         
+        # Quit Pygame
+        pygame.quit()
+        
 # Create an instance of TestFan to run the program
 TestFan()
