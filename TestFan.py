@@ -43,7 +43,7 @@ class TestFan:
 
             # Clear the window
             window.fill(LIGHT_BLUE)
-            
+
             # Render the text
             font = pygame.font.SysFont(None, 30)
         
@@ -69,8 +69,11 @@ class TestFan:
             window.blit(text7, (10, 150))
             window.blit(text8, (10, 170))
 
-        # Control the frame rate
-        clock.tick(60)
+            # Update the display
+            pygame.display.flip()
+
+            # Control the frame rate
+            clock.tick(60)
         
 # Create an instance of TestFan to run the program
 TestFan()
