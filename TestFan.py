@@ -15,6 +15,11 @@ class TestFan:
         print("Fan 1 - Radius:", first_fan.get_radius())
         print("Fan 1 - Color:", first_fan.get_color())
         print("Fan 1 - On:", first_fan.is_on())
+
+        # Display the second object's speed, radius, color, and on properties.
+        print("\nFan 2 - Speed:", second_fan.get_speed())
+        print("Fan 2 - Radius:", second_fan.get_radius())
+        print("Fan 2 - Color:", second_fan.get_color())
+        print("Fan 2 - On:", second_fan.is_on())
         
-# Display the second object's speed, radius, color, and on properties.
 # Create an instance of TestFan to run the program
