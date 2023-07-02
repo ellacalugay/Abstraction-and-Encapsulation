@@ -7,7 +7,7 @@ from tkinter import ttk
 
 # Define a function to display the pet information
 def display_pet_information(name, animal_type, age):
-    
+
     # Initialize tkinter app
     info_window = tk.Tk()
     info_window.title("Pet Information")
@@ -16,6 +16,22 @@ def display_pet_information(name, animal_type, age):
     # Set style
     style = ttk.Style()
     style.configure('TButton', font=('Helvetica', 12))
+
+    # Create an info label to display the pet information
+    info_label = tk.Label(info_window, text="Pet Information", font=('Helvetica', 16, 'bold'), bg='light blue')
+    info_label.pack(pady=20)
+
+    # Create a name label to display the pet name
+    name_label = tk.Label(info_window, text="Your pet name is " + name, font=('Times', 12, 'bold'), bg='yellow')
+    name_label.pack()
+
+    # Create a name label to display the pet type
+    type_label = tk.Label(info_window, text="Your pet type is " + animal_type, font=('Times', 12, 'bold'), bg='yellow')
+    type_label.pack()
+
+    # Create a name label to display the pet age
+    age_label = tk.Label(info_window, text="Your pet age is " + age, font=('Times', 12, 'bold'), bg='yellow')
+    age_label.pack()
 
 # Prompts the user to enter the name, type, and age of his or her pet.
 name = input("Enter the name of your pet: ")
