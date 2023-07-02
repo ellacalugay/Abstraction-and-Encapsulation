@@ -55,3 +55,6 @@ while running:
     
     # Update the window
     pygame.display.flip()
+    
+    # Quit Pygame
+    pygame.quit()
