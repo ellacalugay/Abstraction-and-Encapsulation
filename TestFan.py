@@ -14,6 +14,14 @@ YELLOW = (255, 255, 0)
 BLUE = (0, 0, 255)
 LIGHT_BLUE = (173, 216, 230)
 
+# Set the window size
+WINDOW_WIDTH = 400
+WINDOW_HEIGHT = 300
+
+# Create the Pygame window
+window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+pygame.display.set_caption("Fan Test")
+
 # Create a class that creates two Fan Objects.
 class TestFan:
     def __init__(self):
