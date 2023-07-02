@@ -20,3 +20,5 @@ class Car:
     # Create get_speed method that should return the current speed.
     def get_speed(self):
         return self.__speed
+    
+# End of the code.
