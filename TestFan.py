@@ -41,17 +41,20 @@ class TestFan:
                 if event.type == pygame.QUIT:
                     running = False
 
-        # Display the first object's speed, radius, color, and on properties.
-        print("Fan 1 - Speed:", first_fan.get_speed())
-        print("Fan 1 - Radius:", first_fan.get_radius())
-        print("Fan 1 - Color:", first_fan.get_color())
-        print("Fan 1 - On:", first_fan.is_on())
+            # Render the text
+            font = pygame.font.SysFont(None, 30)
+        
+            # Display the first object's speed, radius, color, and on properties.
+            text1 = font.render("Fan 1 - Speed: " + str(first_fan.get_speed()), True, YELLOW)
+            text2 = font.render("Fan 1 - Radius: " + str(first_fan.get_radius()), True, YELLOW)
+            text3 = font.render("Fan 1 - Color: " + first_fan.get_color(), True, YELLOW)
+            text4 = font.render("Fan 1 - On: " + str(first_fan.is_on()), True, YELLOW)
 
-        # Display the second object's speed, radius, color, and on properties.
-        print("\nFan 2 - Speed:", second_fan.get_speed())
-        print("Fan 2 - Radius:", second_fan.get_radius())
-        print("Fan 2 - Color:", second_fan.get_color())
-        print("Fan 2 - On:", second_fan.is_on())
+            # Display the second object's speed, radius, color, and on properties.
+            text5 = font.render("Fan 2 - Speed: " + str(second_fan.get_speed()), True, BLUE)
+            text6 = font.render("Fan 2 - Radius: " + str(second_fan.get_radius()), True, BLUE)
+            text7 = font.render("Fan 2 - Color: " + second_fan.get_color(), True, BLUE)
+            text8 = font.render("Fan 2 - On: " + str(second_fan.is_on()), True, BLUE)
 
         # Control the frame rate
         clock.tick(60)
