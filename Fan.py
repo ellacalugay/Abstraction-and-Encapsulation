@@ -27,7 +27,11 @@ class Fan:
     def is_on(self):
         return self.__on
     
-# A private bool data field named on that specifies whether the fan is on (the default is False).
+    # Create a set on method
+    def set_on(self, on):
+        # A private bool data field named on that specifies whether the fan is on (the default is False).
+        self.__on = on
+
 # A private float data field named radius that specifies the radius of the fan.
 # A private string data field named color that specifies the color of the fan.
 # The accessor(getters) and mutator(setters) methods for all four data fields.
