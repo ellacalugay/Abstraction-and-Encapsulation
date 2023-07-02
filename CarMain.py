@@ -31,12 +31,15 @@ while running:
     for event in pygame.event.get():
         if event.type == QUIT:
             running = False
-            
-# Call the accelerate method five times and display the current speed
-print("--Accelerate--")
-for i in range(1, 6):
-    my_car.accelerate()
-    print(f"[{i}] Current speed of the car:", my_car.get_speed())
+
+    # Call the accelerate method five times and display the current speed
+    text = font.render("--Accelerate--", True, purple)
+    window.blit(text, (50, 50))
+    for i in range(1, 6):
+        my_car.accelerate()
+        speed_text = f"[{i}] Current speed: {my_car.get_speed()}"
+        text = font.render(speed_text, True, purple)
+        window.blit(text, (50, 100 + 40 * i))
 
 # Call the brake method five times and display the current speed
 print("\n\n--Brake--")
