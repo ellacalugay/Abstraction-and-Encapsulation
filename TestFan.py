@@ -30,6 +30,9 @@ class TestFan:
         # For the second object, assign the medium speed, radius 5, color blue, and turn it off.
         second_fan = Fan(Fan.MEDIUM, 5, 'blue', False)
 
+        # Create a clock object to control the frame rate
+        clock = pygame.time.Clock()
+
         # Display the first object's speed, radius, color, and on properties.
         print("Fan 1 - Speed:", first_fan.get_speed())
         print("Fan 1 - Radius:", first_fan.get_radius())
@@ -42,5 +45,8 @@ class TestFan:
         print("Fan 2 - Color:", second_fan.get_color())
         print("Fan 2 - On:", second_fan.is_on())
 
+        # Control the frame rate
+        clock.tick(60)
+        
 # Create an instance of TestFan to run the program
 TestFan()
