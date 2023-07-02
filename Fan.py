@@ -23,6 +23,10 @@ class Fan:
         # A private int data field named speed that specifies the speed of the fan.
         self.__speed = speed
 
+    # Create an is on method
+    def is_on(self):
+        return self.__on
+    
 # A private bool data field named on that specifies whether the fan is on (the default is False).
 # A private float data field named radius that specifies the radius of the fan.
 # A private string data field named color that specifies the color of the fan.
