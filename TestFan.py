@@ -41,6 +41,9 @@ class TestFan:
                 if event.type == pygame.QUIT:
                     running = False
 
+            # Clear the window
+            window.fill(LIGHT_BLUE)
+            
             # Render the text
             font = pygame.font.SysFont(None, 30)
         
