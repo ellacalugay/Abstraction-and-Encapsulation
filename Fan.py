@@ -50,3 +50,4 @@ class Fan:
         # A private string data field named color that specifies the color of the fan.
         self.__color = color
 
+# End of the code.
