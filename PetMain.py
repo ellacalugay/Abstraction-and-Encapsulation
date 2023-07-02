@@ -85,3 +85,6 @@ def clear_form():
 # Create a clear button
 clear_button = tk.Button(root, text="Clear", command=clear_form, bg='red', fg='white')
 clear_button.pack(side=tk.RIGHT, padx=5)
+
+# Start the tkinter event loop
+root.mainloop()
