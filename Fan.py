@@ -2,7 +2,11 @@
 
 # Pseudocode
 # Create a class named Fan to represent a fan.
+class Fan:
 # Create three constants named SLOW, MEDIUM, and FAST with the values 1, 2, and 3 to denote the fan speed.
+    SLOW = 1
+    MEDIUM = 2
+    FAST = 3
 # Create a constructor that creates a fan with the specified speed (default SLOW), radius (default 5), color (default blue), and on (default False).
 # A private int data field named speed that specifies the speed of the fan.
 # A private bool data field named on that specifies whether the fan is on (the default is False).
