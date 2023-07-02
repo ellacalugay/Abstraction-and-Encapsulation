@@ -75,3 +75,13 @@ age_entry.pack()
 # Create a submit button
 submit_button = tk.Button(root, text="Submit", command=submit_form, bg='green', fg='white')
 submit_button.pack(side=tk.LEFT, padx=5)
+
+def clear_form():
+    # Clear the entry fields
+    name_entry.delete(0, tk.END)
+    type_entry.delete(0, tk.END)
+    age_entry.delete(0, tk.END)
+
+# Create a clear button
+clear_button = tk.Button(root, text="Clear", command=clear_form, bg='red', fg='white')
+clear_button.pack(side=tk.RIGHT, padx=5)
