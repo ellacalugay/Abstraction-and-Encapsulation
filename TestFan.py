@@ -9,6 +9,12 @@ class TestFan:
         first_fan = Fan(Fan.FAST, 10, 'yellow', True)
         # For the second object, assign the medium speed, radius 5, color blue, and turn it off.
         second_fan = Fan(Fan.MEDIUM, 5, 'blue', False)
-# Display the first object's speed, radius, color, and on properties.
+
+        # Display the first object's speed, radius, color, and on properties.
+        print("Fan 1 - Speed:", first_fan.get_speed())
+        print("Fan 1 - Radius:", first_fan.get_radius())
+        print("Fan 1 - Color:", first_fan.get_color())
+        print("Fan 1 - On:", first_fan.is_on())
+        
 # Display the second object's speed, radius, color, and on properties.
 # Create an instance of TestFan to run the program
