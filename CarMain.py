@@ -41,8 +41,11 @@ while running:
         text = font.render(speed_text, True, purple)
         window.blit(text, (50, 100 + 40 * i))
 
-# Call the brake method five times and display the current speed
-print("\n\n--Brake--")
-for i in range(1, 6):
-    my_car.brake()
-    print(f"[{i}] Current speed of the car:", my_car.get_speed())
+    # Call the brake method five times and display the current speed
+    text = font.render("--Brake--", True, purple)
+    window.blit(text, (50, 400))
+    for i in range(1, 6):
+        my_car.brake()
+        speed_text = f"[{i}] Current speed: {my_car.get_speed()}"
+        text = font.render(speed_text, True, purple)
+        window.blit(text, (50, 400 + 40 * i))
