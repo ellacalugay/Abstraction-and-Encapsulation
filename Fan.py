@@ -1,4 +1,4 @@
-# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation
+# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation - Fan Class
 
 # Pseudocode
 # Create a class named Fan to represent a fan.
@@ -50,4 +50,3 @@ class Fan:
         # A private string data field named color that specifies the color of the fan.
         self.__color = color
 
-# The accessor(getters) and mutator(setters) methods for all four data fields.

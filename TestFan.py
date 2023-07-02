@@ -1,7 +1,12 @@
-# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation
+# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #9 | Abstraction and Encapsulation - Fan Class
 
 # Pseudocode
 from Fan import Fan
+import pygame
+
+# Initialize Pygame
+pygame.init()
+
 # Create a class that creates two Fan Objects.
 class TestFan:
     def __init__(self):
