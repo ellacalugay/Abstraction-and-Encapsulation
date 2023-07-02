@@ -41,5 +41,9 @@ class Fan:
         # A private float data field named radius that specifies the radius of the fan.
         self.__radius = radius
 
+    # Create a get color method
+    def get_color(self):
+        return self.__color
+    
 # A private string data field named color that specifies the color of the fan.
 # The accessor(getters) and mutator(setters) methods for all four data fields.
