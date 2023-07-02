@@ -32,6 +32,9 @@ while running:
         if event.type == QUIT:
             running = False
 
+    # Clear the window with pink color
+    window.fill(pink)
+
     # Call the accelerate method five times and display the current speed
     text = font.render("--Accelerate--", True, purple)
     window.blit(text, (50, 50))
