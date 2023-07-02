@@ -49,3 +49,25 @@ print("Your pet's age is", pet.get_age())
 # Create the main tkinter window
 root = tk.Tk()
 root.title("Pet Information Form")
+
+# Create labels and entry fields for the input
+name_label = tk.Label(root, text="Name:",  font=('Times', 12, 'bold'), bg='Blue')
+name_label.pack()
+
+# Name entry
+name_entry = tk.Entry(root)
+name_entry.pack()
+
+type_label = tk.Label(root, text="Type:", font=('Times', 12, 'bold'), bg='Red')
+type_label.pack()
+
+# Animal type entry
+type_entry = tk.Entry(root)
+type_entry.pack()
+
+age_label = tk.Label(root, text="Age:", font=('Times', 12, 'bold'), bg='Yellow')
+age_label.pack()
+
+# Age entry
+age_entry = tk.Entry(root)
+age_entry.pack()
