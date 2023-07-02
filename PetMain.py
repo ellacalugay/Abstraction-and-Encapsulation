@@ -12,3 +12,6 @@ age = input("Enter the age of your pet: ")
 pet = Pet(name, animal_type, age)
 
 # Display the entered information using the accessor methods
+print("Your pet's name is", pet.get_name())
+print("Your pet's type is", pet.get_animal_type())
+print("Your pet's age is", pet.get_age())
