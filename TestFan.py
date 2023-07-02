@@ -21,5 +21,6 @@ class TestFan:
         print("Fan 2 - Radius:", second_fan.get_radius())
         print("Fan 2 - Color:", second_fan.get_color())
         print("Fan 2 - On:", second_fan.is_on())
-        
+
 # Create an instance of TestFan to run the program
+TestFan()
