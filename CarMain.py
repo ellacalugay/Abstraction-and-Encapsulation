@@ -8,6 +8,12 @@ from pygame.locals import *
 # Initialize Pygame
 pygame.init()
 
+# Set up the window
+window_width = 600
+window_height = 680
+window = pygame.display.set_mode((window_width, window_height))
+pygame.display.set_caption("All About Car")
+
 # Create a Car object
 my_car = Car(2022, "Bugatti")
 
