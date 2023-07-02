@@ -21,6 +21,14 @@ class Pet:
     def set_age(self, age):
         self.__speed = age
 
-# Create a get name method
-# Create a get animal type method
-# Create a get age method
+    # Create a get name method
+    def get_name(self):
+        return self.__name
+    
+    # Create a get animal type method
+    def get_animal_type(self):
+        return self.__animal_type
+    
+    # Create a get age method
+    def get_age(self):
+        return self.__age
